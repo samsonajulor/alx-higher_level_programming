@@ -17,9 +17,7 @@ import sys
 
 def init_board(n):
     """Initialize an `n`x`n` sized chessboard with 0's."""
-    board = []
-    [board.append([]) for i in range(n)]
-    [row.append(' ') for i in range(n) for row in board]
+    board = [[0 for i in range(n)] for j in range(n)]
     return (board)
 
 
